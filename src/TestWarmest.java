@@ -7,7 +7,7 @@ class TestWarmest {
 
 	@Test
 	void test() {
-		Warmest<Integer,String> warmest = new Warmest<>();
+		WarmestV2<Integer,String> warmest = new WarmestV2<>();
 		warmest.put(1,"hello");
 		assertEquals(warmest.getWarmest(), "hello") ; //returns "hello"
 		warmest.put(2, "warmest");
